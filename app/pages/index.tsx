@@ -69,7 +69,7 @@ export default function Beroepstaken({
         <title>LEF - {intl.formatMessage({ id: "PROFESSIONAL_DUTIES" })}</title>
       </Head>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12}>
           <NavigationCard
             title={<FormattedMessage id="ARCHITECTURE_LAYERS" />}
             subheader={<FormattedMessage id="ARCHITECTURE_LAYERS_SUBHEADER" />}
@@ -80,12 +80,12 @@ export default function Beroepstaken({
                 title={<FormattedMessage id={architecture_layer} />}
                 query_param_key="architectuurlaag"
                 query_param_value={architecture_layer}
-                props={{ xs: 12 }}
+                props={{ xs: 12, lg: 2.4 }}
               />
             ))}
           </NavigationCard>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12}>
           <NavigationCard
             title={<FormattedMessage id="ACTIVITIES" />}
             subheader={<FormattedMessage id="ACTIVITIES_SUBHEADER" />}
@@ -96,7 +96,7 @@ export default function Beroepstaken({
                 title={<FormattedMessage id={activity} />}
                 query_param_key="activiteit"
                 query_param_value={activity}
-                props={{ xs: 12 }}
+                props={{ xs: 12, lg: 2.4 }}
               />
             ))}
           </NavigationCard>
